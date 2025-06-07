@@ -1,4 +1,4 @@
-### Spitfire Dashboard
+# Spitfire Dashboard
 
 This repo contains the latest code used to run the Howstrong Simulations Spitfire Mk.IX gauges with DCS.
 
