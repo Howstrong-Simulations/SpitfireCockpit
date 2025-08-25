@@ -11,6 +11,7 @@ The first Mega Shield should be connected with the cockpit instruments as labell
 #### Mega Shield A - Connectors J-Ax
 
 | Connector| Instrument | Arduino Step/Direction Pins |
+| --- | --- | --- |
 | J-A1 | Voltmeter | 9, 8|
 | J-A2 | Tachometer | 6, 7 |
 | J-A3 | Boost Pressure | 11, 10 |
@@ -27,6 +28,7 @@ The first Mega Shield should be connected with the cockpit instruments as labell
 #### Mega Shield A - Connectors J-Bx
 
 | Connector | Instrument | Arduino Pins |
+| --- | --- | --- |
 | J-B1 | | A5, A4 |
 | J-B2 | | A3, A2 |
 | J-B3 | | A1, A0 |
@@ -34,6 +36,7 @@ The first Mega Shield should be connected with the cockpit instruments as labell
 #### Mega Shield A - Connectors J-Cx
 
 | Connector | Instrument | Arduino Pins |
+| --- | --- | --- |
 | J-C1 | | 26 |
 | J-C2 | | 28 |
 | J-C3 | | 27 |
@@ -57,6 +60,7 @@ The first Mega Shield should be connected with the cockpit instruments as labell
 Connectors D are 2 pin connectors which provide 12V only.
 
 | Connector | Instrument |
+| --- | --- |
 |  |  |
 |  |  |
 |  |  |
@@ -67,6 +71,7 @@ Connectors D are 2 pin connectors which provide 12V only.
 #### Mega Shield A  - Connectors J-Ex
 
 | Connector | Instrument | Arduino Pins |
+| --- | --- | --- |
 | J-E1 |  | A8, A9 |
 | J-E2 |  | A12, A13 |
 | J-E3 |  | 52, 53 |
