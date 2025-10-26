@@ -31,7 +31,7 @@ The first Mega Shield should be connected with the cockpit instruments as labell
 | --- | --- | --- |
 | J-B1 | DI Encoder | A5, A4 |
 | J-B2 | | A3, A2 |
-| J-B3 | | A1, A0 |
+| J-B3 | Undercarriage Indicator | A1, A0 |
 
 #### Mega Shield A - Connectors J-Cx
 
@@ -42,12 +42,12 @@ The first Mega Shield should be connected with the cockpit instruments as labell
 | J-C3 | Gunsight Switch | 27 |
 | J-C4 | Navigation Lights Switch | 29 |
 | J-C5 | Fuel Gauge Switch | 31 |
-| J-C6 | Suoercharger Mode Select Switch| 30 |
+| J-C6 | Supercharger Mode Select Switch| 30 |
 | J-C7 | Supercharger Lamp | 32 |
 | J-C8 | Low Fuel Pressure Lamp | 33 |
 | J-C9 | Magnetos 1 Switch | 35 |
 | J-C10 | Magneto 2 Switch| 37 |
-| J-C11 | Undercarriage Indicator| 34 |
+| J-C11 | | 34 |
 | J-C12 | | 36 |
 | J-C13 | | 38 |
 | J-C14 | | 39 |
@@ -82,4 +82,5 @@ Connectors D are 2 pin connectors which provide 12V only.
 | J-E8 |  | A14, A15 |
 | J-E9 |  | 50, 51 |
 | J-E10 |  | 49, 47 |
+
 
