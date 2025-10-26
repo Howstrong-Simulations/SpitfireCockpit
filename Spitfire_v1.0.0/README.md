@@ -21,9 +21,9 @@ The first Mega Shield should be connected with the cockpit instruments as labell
 | J-A7 | Fuel Level | 4, 5 |
 | J-A8 | Nose Trim | 2, 3 |
 | J-A9 | Turn Coordinator| 22, 23 |
-| J-A10| Slip Coordinator| 24, 25 |
+| J-A10| Slip Coordinator| 25, 24 |
 | J-A11| Variometer (RoC) | 19, 18 |
-| J-A12| | 20, 21 |
+| J-A12| | 21, 20 |
 
 #### Mega Shield A - Connectors J-Bx
 
@@ -82,5 +82,6 @@ Connectors D are 2 pin connectors which provide 12V only.
 | J-E8 |  | A14, A15 |
 | J-E9 |  | 50, 51 |
 | J-E10 |  | 49, 47 |
+
 
 
