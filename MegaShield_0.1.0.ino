@@ -72,34 +72,34 @@ void setup() {
   slip.setMaxSpeed(1000);
 
   //DI
-  diStepper.setMaxSpeed(1000);
-  diStepper.setAcceleration(1000);
-  int diIR = digitalRead(di_IRSensor);
-  pinMode(di_IRSensor, INPUT);
-  pinMode(DI_encoderPin1, INPUT); 
-  pinMode(DI_encoderPin2, INPUT);
-  digitalWrite(DI_encoderPin1, HIGH); //turn pullup resistor on
-  digitalWrite(DI_encoderPin2, HIGH); //turn pullup resistor on
-  diStepper.setSpeed(750);
-  while(diIR == 1){
-    diIR = digitalRead(di_IRSensor);
-    diStepper.runSpeed();
-  }
-  diStepper.setCurrentPosition(2000);
-  diStepper.moveTo(0);
+  //diStepper.setMaxSpeed(1000);
+  //diStepper.setAcceleration(1000);
+  //int diIR = digitalRead(di_IRSensor);
+  //pinMode(di_IRSensor, INPUT);
+  //pinMode(DI_encoderPin1, INPUT); 
+  //pinMode(DI_encoderPin2, INPUT);
+  //digitalWrite(DI_encoderPin1, HIGH); //turn pullup resistor on
+  //digitalWrite(DI_encoderPin2, HIGH); //turn pullup resistor on
+  //diStepper.setSpeed(750);
+  //while(diIR == 1){
+  //  diIR = digitalRead(di_IRSensor);
+  //  diStepper.runSpeed();
+  //}
+  //diStepper.setCurrentPosition(2000);
+  //diStepper.moveTo(0);
 
   //ASI
-  asi.setMaxSpeed(1000);
-  asi.setAcceleration(1000);
-  int asiIR = digitalRead(asi_IRSensor);
-  pinMode(asi_IRSensor, INPUT);
-  asi.setSpeed(750);
-  while(asiIR == 1){
-    asiIR = digitalRead(asi_IRSensor);
-    asi.runSpeed();
-  }
-  asi.setCurrentPosition(720);
-  asi.moveTo(0);
+  //asi.setMaxSpeed(1000);
+  //asi.setAcceleration(1000);
+  //int asiIR = digitalRead(asi_IRSensor);
+  //pinMode(asi_IRSensor, INPUT);
+  //asi.setSpeed(750);
+  //while(asiIR == 1){
+  //  asiIR = digitalRead(asi_IRSensor);
+  //  asi.runSpeed();
+  //}
+  //asi.setCurrentPosition(720);
+  //asi.moveTo(0);
 
   DcsBios::setup(); //DCS BIOS Setup
 }
@@ -180,7 +180,7 @@ void onDigaugeChange(unsigned int newValue) {
   else if(move > steps/2){
     move -= steps;
   }
-  diStepper.move(move);
+  //diStepper.move(move);
 }
 DcsBios::IntegerBuffer digaugeBuffer(0x5446, 0xffff, 0, onDigaugeChange);
 
@@ -222,14 +222,14 @@ void onAirspeedgaugeChange(unsigned int newValue) {
   int backlashStepsCW = 10;
   if(asiDelta > 0 && asiDeltaLast < 0){
     out += backlashStepsCCW;
-    Serial.println("ccw, + backlash");
+    //Serial.println("ccw, + backlash");
   }
   else if(asiDelta < 0 && asiDeltaLast > 0){
     out -= backlashStepsCW;
-    Serial.println("cw, - backlash");
+    //Serial.println("cw, - backlash");
   }
   asiDeltaLast = asiDelta;
-  asi.moveTo(out);
+  //asi.moveTo(out);
 }
 DcsBios::IntegerBuffer airspeedgaugeBuffer(0x5436, 0xffff, 0, onAirspeedgaugeChange);
 
