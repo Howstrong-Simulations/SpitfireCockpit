@@ -156,14 +156,14 @@ DcsBios::IntegerBuffer variometergaugeBuffer(0x543c, 0xffff, 0, onVariometergaug
 
 void onSideslipgaugeChange(unsigned int newValue) {
   long inLookup[] = {0, 13539, 51996, 65535}; //input from 0-65535
-  long outLookup[] = {93, 63, -63, -93}; //output in steps
+  long outLookup[] = {-93, -63, 63, 93}; //output in steps
   float out = interpolate(inLookup, outLookup, newValue);
   slip.moveTo(out);
   }
 DcsBios::IntegerBuffer sideslipgaugeBuffer(0x5448, 0xffff, 0, onSideslipgaugeChange);
 
 void onTurngaugeChange(unsigned int newValue) {\
-  float incomingByte = map(newValue, 0, 65535, -244, 0);
+  float incomingByte = map(newValue, 0, 65535, 0, -244);
   turn.moveTo(incomingByte);
 }
   
