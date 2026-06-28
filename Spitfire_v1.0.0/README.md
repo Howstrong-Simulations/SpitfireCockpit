@@ -17,7 +17,7 @@ The first Mega Shield should be connected with the cockpit instruments as labell
 | J-A3 | Boost Pressure | 11, 10 |
 | J-A4 | Radiator Temperature| 13, 12 |
 | J-A5 | Oil Temperature | 14, 15 |
-| J-A6 | Oil Pressure | 17, 16 |
+| J-A6 |  | 17, 16 |
 | J-A7 | Fuel Level | 4, 5 |
 | J-A8 | Nose Trim | 2, 3 |
 | J-A9 | Turn Coordinator| 22, 23 |
@@ -81,7 +81,83 @@ Connectors D are 2 pin connectors which provide 12V only.
 | J-E7 |  | A10, A11 |
 | J-E8 |  | A14, A15 |
 | J-E9 |  | 50, 51 |
-| J-E10 |  | 49, 47 |
+| J-E10 |  | 46, 47 |
 
+### Mega Shield B
+The second  Mega Shield should be connected with the cockpit instruments as labelled below. It should have the `.ino` file called `MegaShield_v1.1.4B.ino` uploaded to it.
 
+#### Mega Shield B - Connectors J-Ax
+
+| Connector| Instrument | Arduino Step/Direction Pins |
+| --- | --- | --- |
+| J-A1 |  | 9, 8|
+| J-A2 | Oil Pressure | 6, 7 |
+| J-A3 | Oxygen Supply | 11, 10 |
+| J-A4 | Oxygen Delivery | 13, 12 |
+| J-A5 |  | 14, 15 |
+| J-A6 |  | 17, 16 |
+| J-A7 |  | 4, 5 |
+| J-A8 |  | 2, 3 |
+| J-A9 | | 22, 23 |
+| J-A10| | 25, 24 |
+| J-A11|  | 19, 18 |
+| J-A12| | 21, 20 |
+
+#### Mega Shield B - Connectors J-Bx
+
+| Connector | Instrument | Arduino Pins |
+| --- | --- | --- |
+| J-B1 | Alt Encoder | A5, A4 |
+| J-B2 |  | A3, A2 |
+| J-B3 |  | A1, A0 |
+
+#### Mega Shield B - Connectors J-Cx
+
+| Connector | Instrument | Arduino Pins |
+| --- | --- | --- |
+| J-C1 | Flaps Lever | 26 |
+| J-C2 | Booster Coil | 28 |
+| J-C3 | Starter Coil | 27 |
+| J-C4 |  | 29 |
+| J-C5 |  | 31 |
+| J-C6 | Artificial Horizon IR | 30 |
+| J-C7 |  | 32 |
+| J-C8 |  | 33 |
+| J-C9 |  | 35 |
+| J-C10 | | 37 |
+| J-C11 | Alt Setting IR | 34 |
+| J-C12 | Alt Tens IR | 36 |
+| J-C13 | Alt Thous IR | 38 |
+| J-C14 | Alt Hund IR | 39 |
+| J-C15 | | 41 |
+| J-C16 | | 40 |
+| J-C17 | | 43 |
+| J-C18 | | 42 |
+
+#### Mega Shield B - Connectors J-Dx
+Connectors D are 2 pin connectors which provide 12V only.
+
+| Connector | Instrument |
+| --- | --- |
+| J-D1 | Artificial Horizon |
+| J-D2 | Altimeter |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+
+#### Mega Shield B  - Connectors J-Ex
+
+| Connector | Instrument | Arduino Pins |
+| --- | --- | --- |
+| J-E1 | Stbd Lamp Knob | A8, A9 |
+| J-E2 | Port Lamp Knob | A12, A13 |
+| J-E3 | Artificial Horizon Roll Motor Driver| 52, 53 |
+| J-E4 | Artificial Horizon Pitch Motor Driver | 48, 49 |
+| J-E5 | Stbd Lamp | 44, 45 |
+| J-E6 | Altimeter Setting Motor Driver | A6, A7 |
+| J-E7 | Altimeter Tens Motor Driver | A10, A11 |
+| J-E8 | Altimeter Thousands Motor Driver | A14, A15 |
+| J-E9 | Altimeter Hundreds Motor Driver | 50, 51 |
+| J-E10 | Port Lamp | 46, 47 |
 
